@@ -21,4 +21,4 @@ alias xclip-cp='xclip -selection clipboard'
 alias sdown='shutdown now'
 alias restart='reboot'
 
-cd  /home/workspace
+alias work='cd  /home/workspace'
