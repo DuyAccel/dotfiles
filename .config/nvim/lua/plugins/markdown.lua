@@ -1,11 +1,13 @@
 return {
-  "iamcco/markdown-preview.nvim",
-  cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-  build = "cd app && npm install",
-  init = function()
-    vim.g.mkdp_filetypes = { "markdown" }
-  end,
-  ft = { "markdown" },
+  'MeanderingProgrammer/render-markdown.nvim',
+  lazy= false,
+
+  dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' },
+  opts = function ()
+    require('render-markdown').setup({
+    file_types = {'markdown', 'quatro'}
+  })
+  end
 }
 
 
