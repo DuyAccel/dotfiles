@@ -24,6 +24,7 @@ return {
         "css",
         "python",
         "markdown",
+        "markdown_inline",
       },
     },
   },
