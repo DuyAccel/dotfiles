@@ -89,6 +89,14 @@ alias mkdir='mkdir -p'
 pokemon-colorscripts --no-title -r 1,3,6
 
 
-export PATH=$PATH:/home/duy/bin
-export EDITOR=nvim
-export LIBVIRT_DEFAULT_URI="qemu:///system"
+#------------------------------------------------------#
+alias mount-xs1000='udisksctl mount -b /dev/sda1 && \
+  udisksctl mount -b /dev/sda2 && \
+  mount /mnt/xs1000/virtual-machines/k8s && \
+  mount /mnt/xs1000/virtual-machines/jboss'
+
+alias umount-xs1000='umount /mnt/xs1000/virtual-machines/k8s && \
+  umount /mnt/xs1000/virtual-machines/jboss && \
+  udisksctl unmount -b /dev/sda1 && \
+  udisksctl unmount -b /dev/sda2'
+
