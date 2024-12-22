@@ -95,8 +95,8 @@ alias mount-xs1000='udisksctl mount -b /dev/sda1 && \
   mount /mnt/xs1000/virtual-machines/k8s && \
   mount /mnt/xs1000/virtual-machines/jboss'
 
-alias umount-xs1000='umount /mnt/xs1000/virtual-machines/k8s && \
-  umount /mnt/xs1000/virtual-machines/jboss && \
+alias umount-xs1000='umount /home/WORK/jboss-eap/VMs && \
+  umount /home/WORK/kubernetes/VMs && \
   udisksctl unmount -b /dev/sda1 && \
   udisksctl unmount -b /dev/sda2'
 
